@@ -20,9 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-        /**
-     * Check if the submitted answer is correct.
-     */
+     //Check if the submitted answer is correct.
     private fun checkAnswer() {
         val answer = binding.etAnswer.text.toString()
         // When the answer equals "giraffe" then display a correct message using a toast message.
