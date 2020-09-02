@@ -2,6 +2,7 @@ package com.example.madlevel1example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.madlevel1example.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -9,10 +10,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root) // Sets the activity layout resource file.
+
+        // Using the id given in the layout file you can access the component.
+        // Set an action when the user clicks on the confirm button.
+        binding.btnConfirm.setOnClickListener {
+            checkAnswer()
+        }
     }
 
-    /**
+        /**
      * Check if the submitted answer is correct.
      */
     private fun checkAnswer() {
