@@ -43,7 +43,7 @@
         app:layout_constraintStart_toEndOf="@+id/equals" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/dice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/dice1"
@@ -56,10 +56,9 @@
         android:id="@+id/lastThrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
         android:text="@string/lastThrow_text"
         app:layout_constraintBottom_toTopOf="@+id/equals"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/dice" />
 </androidx.constraintlayout.widget.ConstraintLayout>
