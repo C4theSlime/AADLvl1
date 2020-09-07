@@ -5,4 +5,6 @@
     <string name="equals_button">Equals</string>
     <string name="higher_button">Higher</string>
     <string name="lastThrow_text">Last Throw: %d</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Sorry, you were incorrect.</string>
 </resources>
