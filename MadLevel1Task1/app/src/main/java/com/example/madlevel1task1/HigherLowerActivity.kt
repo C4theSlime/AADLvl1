@@ -30,6 +30,11 @@ class HigherLowerActivity : AppCompatActivity() {
             6 -> binding.dice.setImageResource(R.drawable.dice6)
         }
         binding.lastThrow.text = getString(R.string.lastThrow_text, lastThrow)
+    }
 
+    private fun rollDice() {
+        lastThrow = currentThrow
+        currentThrow = (1..6).random()
+        updateUI()
     }
 }
